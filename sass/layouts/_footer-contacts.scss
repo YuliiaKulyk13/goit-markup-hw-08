@@ -1,0 +1,28 @@
+.footer-contacts {
+    margin-right: auto;
+    margin-right: 70px;
+  }
+  
+  .footer-contacts__address {
+    margin-bottom: 9px;
+  }
+  
+  .footer-contacts__mail {
+    margin-bottom: 9px;
+  }
+  
+  .footer-contacts__address,
+  .footer-contacts__mail,
+  .footer-contacts__tel {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: var(--main-text-color);
+  }
+  
+  .footer-contacts__mail,
+  .footer-contacts__tel {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+  }

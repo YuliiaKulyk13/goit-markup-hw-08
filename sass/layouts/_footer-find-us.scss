@@ -1,0 +1,60 @@
+.footer-find-us {
+    margin-bottom: 20px;
+  
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: var(--main-text-color);
+  }
+  
+  .footer-soc-links{
+    margin-right: 94px;
+  }
+  
+  .footer-find-us__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-find-us__link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.1);
+  
+    transition: var(--transition);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      cursor: pointer;
+       }
+  }
+  
+   .footer-find-us__icon{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    fill: #ffffff;
+  
+    transition: var(--transition);
+
+    .footer-find-us__link:hover &,
+    .footer-find-us__link:focus &{
+      fill: #ffffff;
+    }
+  } 

@@ -1,0 +1,46 @@
+.connect {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  
+  .connect__mail,
+  .connect__tel {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+    transition: var(--transition);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:focus
+     {
+      color: var(--accent-color);
+      fill: #2196f3;
+    }
+  }
+  
+
+  .connect__icon {
+    fill: currentColor;
+    margin-right: 10px;
+    transition: var(--transition);
+    &:hover 
+    &:focus {
+      color: var(--accent-color);
+      fill: #2196f3;
+  }
+}
