@@ -1,6 +1,7 @@
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
+   
     background-color: #f5f4fa;
   }
   
@@ -16,11 +17,13 @@
   
   .team-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
   
   .team-list__item {
     width: calc((100% - 60px) / 3);
+   
   }
   
   .team-list__item {
