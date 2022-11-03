@@ -1,6 +1,8 @@
 .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin: 0 auto;
   }
   
@@ -8,12 +10,21 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
   }
   
-  .feature-list__link{
+  .features-list__link{
     width: 100%;
-  }
 
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+      
+     @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+     }
+    
+  }
+  }
   .features-list__title{
     margin-bottom: 10px;
   
@@ -22,16 +33,39 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+
+    @media screen and (min-width: 480px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: center;
+      
+    }
   }
   
   .features-list__text {
-    margin-right: 30px;
-    max-width: 270px;
-  
+    gap: 30px;
+    width: 270px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+
+    @media screen and (min-width: 480px) {
+     text-align: center;
+    width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      text-align: center;
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: center;
+      width: 270px;
+    }
   }
   
   .features-list__link:nth-child(4) {
@@ -47,6 +81,17 @@
     background-color: #f5f4fa;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 350px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      
+    }
   }
   
   .icon-sputnik::before {
@@ -66,6 +111,6 @@
   
   .icon-astronaut::before {
     background-image: url(../images4/astronaut.svg);
-    margin-bottom:30px;
+    margin-bottom: 30px;
   }
   

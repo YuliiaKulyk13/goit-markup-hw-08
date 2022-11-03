@@ -1,6 +1,11 @@
+
 .footer-contacts {
-    margin-right: auto;
-    margin-right: 70px;
+ 
+    @media screen and (min-width: 480px){
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
   }
   
   .footer-contacts__address {

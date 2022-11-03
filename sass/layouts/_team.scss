@@ -1,7 +1,8 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-   
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #f5f4fa;
   }
   
@@ -22,7 +23,13 @@
   }
   
   .team-list__item {
-    width: calc((100% - 60px) / 3);
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+     }
+     @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+     }
    
   }
   
