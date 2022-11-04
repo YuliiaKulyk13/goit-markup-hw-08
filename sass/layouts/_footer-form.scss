@@ -1,6 +1,12 @@
 .footer-form{
-    // display: flex;
-    // flex-direction: column;
+  @media screen and (min-width: 1200px){
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+   
+
+  }
+  
     text-align: center;
     font-weight: 700;
     font-size: 14px;
@@ -41,8 +47,12 @@
       color:#ececec;
     }
 
-    .subscribe-form__mail{
-      margin-bottom: 20px;
+    .subscribe-form__mail{ 
+
+       @media screen and (max-width: 1199px) {
+         margin-bottom: 20px;
+        }
+      
     }
     
     .subscribe-form__btn{
@@ -74,11 +84,14 @@
     border:none;
     }
     
-    // .subscribe-form{
-    //   display: flex;
-    //   align-items: flex-end;
-    //   gap: 12px;
-    // }
+    .subscribe-form{
+      @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: flex-end;
+        gap: 12px;
+      }
+      
+    }
      
     .subscribe-form__icon{
       position: absolute;

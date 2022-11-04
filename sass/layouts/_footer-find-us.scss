@@ -1,5 +1,6 @@
 .footer-find-us {
     margin-bottom: 20px;
+    
     text-align: center;
    
     font-family: "Roboto";
@@ -11,12 +12,21 @@
     text-transform: uppercase;
   
     color: var(--main-text-color);
+    
   }
   
   .footer-soc-links{
-   
-    margin-right: 94px;
+  
     margin-bottom: 60px;
+    
+
+    @media screen and (min-width: 768px){
+      margin-right: 89px;
+    }
+
+    @media screen and (min-width: 1200px){
+      margin-right: 94px;
+    }
   }
   
   .footer-find-us__list {

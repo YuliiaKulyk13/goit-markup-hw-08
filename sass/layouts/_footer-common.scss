@@ -1,25 +1,38 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
   
     background-color: #2f303a;
     margin-left: auto;
     margin-right: 0;
   }
-  
-  // .footer-common {
-  //   display: flex;
-  //   align-items: baseline;
-  // }
+
+  .footer-common{
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  .footer-tablet{
+    @media screen and (min-width: 768px){
+      display: flex;
+      margin-left: auto;
+      align-items: baseline;
+      margin-bottom: 60px;
+    }
+     
+  }
   
   .footer-page{
     margin-bottom: 20px;
   
     
-    @media screen and (min-width: 480px){
-      text-align: center;
+    // @media screen and (min-width: 480px){
+    //   text-align: center;
     
-    }
+    // }
   }
   
 
