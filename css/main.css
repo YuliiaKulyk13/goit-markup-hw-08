@@ -910,17 +910,6 @@ img {
     text-align: center;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer {
-    height: 252px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 100%;
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .footer-common {
