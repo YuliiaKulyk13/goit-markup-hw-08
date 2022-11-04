@@ -1,7 +1,12 @@
 .portfolio-list {
-    display: flex;
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 40px;
+   gap: 8px;
+   @media screen and (min-width: 768px){
+    align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+   }
   }
   
 .portfolio-list__button {

@@ -10,6 +10,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    @media screen and(min-width: 1200px){
+      align-items: center;
+      justify-content: center;
+    }
     
 }  
   
@@ -29,12 +33,16 @@
    
     font-weight: 700;
     font-size: 14px;
-    width: 270px;
+    // width: 270px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--second-text-color);
-    text-align: center;
-    justify-content: center;
+
+    @media screen and (max-width: 767px){
+      text-align: center;
+    }
+    
   }
   
   .features-list__text {
@@ -44,7 +52,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
-    text-align: center;
+    
 
     @media screen and (min-width: 480px) {
       width: 450px;

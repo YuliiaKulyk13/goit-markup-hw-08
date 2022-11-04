@@ -1,11 +1,22 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    text-align: center;
-  
     background-color: #2f303a;
     margin-left: auto;
     margin-right: 0;
+    @media screen and (max-width: 1199px){
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+      height: 252px;
+     }
+    
+  }
+
+  .container{
+    @media screen and (min-width: 1200px) {
+      width: 100%;
+     }
   }
 
   .footer-common{
@@ -20,19 +31,14 @@
       display: flex;
       margin-left: auto;
       align-items: baseline;
+      justify-content: space-between;
       margin-bottom: 60px;
     }
-     
+  
   }
   
   .footer-page{
     margin-bottom: 20px;
-  
-    
-    // @media screen and (min-width: 480px){
-    //   text-align: center;
-    
-    // }
   }
   
 

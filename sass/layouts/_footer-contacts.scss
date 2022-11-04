@@ -1,13 +1,8 @@
 .footer-left{
+  margin-bottom: 60px;
   @media screen and (max-width: 1199px){
     text-align: center;
-    
-  }
-  @media screen and (min-width: 767px){
-    // margin-left: 76px;
-    margin-right: 94px;
-   }
-  
+  } 
 }
 
 .footer-contacts {
@@ -16,7 +11,6 @@
   }
 }
 
-  
   .footer-contacts__address {
     margin-bottom: 9px;
   }
@@ -33,6 +27,11 @@
     letter-spacing: 0.03em;
     font-style: normal;
     color: var(--main-text-color);
+    width: 100%;
+
+    @media screen and (min-width: 1200px){
+      width: 231px;
+    }
   }
   
   .footer-contacts__mail,

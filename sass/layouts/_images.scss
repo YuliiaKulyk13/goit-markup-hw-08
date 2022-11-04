@@ -1,9 +1,9 @@
 .images {
   @media screen and (max-width: 1199px) {
     display: none;
-    
   }
     padding-bottom: 94px;
+
   }
   
   .images__title {
@@ -27,11 +27,14 @@
   
   .images__list {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .images__img{
     position: relative;
     display: block;
+    
     line-height: 0;
   }
   
@@ -43,10 +46,10 @@
     bottom: 0;
     font-weight: 700;
     font-size: 14px;
-    text-align: center;
-  
-    padding-top: 27px;
-    padding-bottom: 27px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
