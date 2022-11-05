@@ -93,26 +93,45 @@
           <ul class="images__list">
               <li class="images__link">
                 <a class="images__img" href="">
-                  <img src="./images/computer.jpg" alt="person working on computer" width="370" height="294">
-              
+                  <picture>
+                    <source srcset="./images/computer.jpg 1x,
+                    ./images/computer@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    <img src="./images/computer.jpg" 
+                  alt="person working on computer" 
+                  width="370" height="294"/>
+                  </picture>
                   <p class="images__text">desktop apps</p> 
-                
                 </a>
             </li>
             <li class="images__link">
               <a class="images__img" href="">
-                <img src="./images/ipad.jpg" alt="person working on ipad" width="370" height="294">
+                <picture>
+                  <source srcset="./images/ipad.jpg 1x,
+                  ./images/ipad@2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                  <img src="./images/ipad.jpg" 
+                alt="person working on ipad" 
+                width="370" height="294"/>
+                </picture>
+                
               <p class="images__text">mobile apps</p>
               </a>
              </li>
                   <li class="images__link">
                     <a class="images__img" href="">
-                    <img src="./images/phone.jpg" alt="person sync phone with computer" width="370" height="294">
-                    <p class="images__text">design solutions</p> 
+                      <picture>
+                        <source srcset="./images/phone.jpg 1x,
+                        ./images/phone@2x.jpg 2x"
+                        media="(min-width: 1200px)"/>
+                        <img src="./images/phone.jpg" 
+                    alt="person sync phone with computer" 
+                    width="370" height="294"/>
+                      </picture>
+            <p class="images__text">design solutions</p> 
                     </a>
                   </li>
-           
-          </ul>
+                </ul>
         </div>
         </section>
         <section class="team">
@@ -120,13 +139,24 @@
             <h2 class="team__title">Our Team</h2>
             <ul class="team-list">
               <li class="team-list__item">
-                <img
+                <picture>
+                  <source srcset="./webstudio/man1-mob.jpg 1x , 
+                  ./webstudio/man1@2x-mob.jpg 2x"
+                  media="(max-width: 767px)"/>
+                  <source srcset="./webstudio/man1-tab.jpg 1x ,
+                  ./webstudio/man1@2x-tab.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/man1.jpg 1x,
+                  ./webstudio/man1@2x.jpg  2x"
+                  media="(min-width: 1200px)"/>
+                  <img
                   class="team-list__image"
                   src="./images/man1.jpg"
                   alt="photo of man"
-                  width="270"
-                  height="260"
+                  width="450"
                 />
+                </picture>
+                
             <div class="team-description">
               <h3 class="team-description__person">Christopher Walker</h3>
               <p class="team-description__process">Product Designer</p>  
@@ -152,13 +182,23 @@
             </div>     
               </li>
               <li class="team-list__item">
-                <img
+                <picture>
+                  <source srcset="./webstudio/woman-mob.jpg 1x , 
+                  ./webstudio/woman@2x-mob.jpg 2x"
+                  media="(max-width: 767px)"/>
+                  <source srcset="./webstudio/woman-tab.jpg 1x ,
+                  ./webstudio/woman@2x-tab.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/woman.jpg 1x,
+                  ./webstudio/woman@2x.jpg  2x"
+                  media="(min-width: 1200px)"/>
+                  <img
                   class="team-list__image"
                   src="./images/woman.jpg"
                   alt="photo of woman"
-                  width="270"
-                  height="260"
-                />
+                  width="450"
+                 />
+                </picture>
                 <div class="team-description">
                 <h3 class="team-description__person" >Kylie Evans</h3>
                 <p class="team-description__process" >Frontend Developer</p>
@@ -183,14 +223,24 @@
                </div>
               </li>
               <li class="team-list__item">
-                <img
+                <picture>
+                  <source srcset="./webstudio/man2-mob.jpg 1x , 
+                  ./webstudio/man2@2x-mob.jpg 2x"
+                  media="(max-width: 767px)"/>
+                  <source srcset="./webstudio/man2-tab.jpg 1x ,
+                  ./webstudio/man2@2x-tab.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/man2.jpg 1x,
+                  ./webstudio/man2@2x.jpg  2x"
+                  media="(min-width: 1200px)"/>
+                  <img
                   class="team-list__image"
                   src="./images/man2.jpg"
                   alt="photo of man"
-                  width="270"
-                  height="260"
-                />
-                <div class="team-description">
+                  width="450"
+                 />
+                </picture>
+               <div class="team-description">
                 <h3 class="team-description__person" >Ryan Harris</h3>
                 <p class="team-description__process" >Marketing</p>
                 <ul class="team-soc-list">
@@ -215,13 +265,23 @@
                 </div>
               </li>
               <li class="team-list__item">
-                <img
+                <picture>
+                  <source srcset="./webstudio/man3-mob.jpg 1x , 
+                  ./webstudio/man3@2x-mob.jpg 2x"
+                  media="(max-width: 767px)"/>
+                  <source srcset="./webstudio/man3-tab.jpg 1x ,
+                  ./webstudio/man3@2x-tab.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/man3.jpg 1x,
+                  ./webstudio/man3@2x.jpg  2x"
+                  media="(min-width: 1200px)"/>
+                  <img
                   class="team-list__image"
                   src="./images/man3.jpg"
                   alt="photo of man"
-                  width="270"
-                  height="260"
+                  width="450"
                 />
+                </picture>
                 <div class="team-description">
                 <h3 class="team-description__person" >Tyler Moore</h3>
                 <p class="team-description__process" >UI Designer</p>
@@ -413,5 +473,6 @@ I agree with the newsletter and accept
     </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

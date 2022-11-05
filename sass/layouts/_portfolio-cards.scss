@@ -77,14 +77,23 @@
   }
     
   .portfolio-description {
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-bottom: 20px;
+    padding: 20px 24px; 
+    width: 450px;
+    
+    @media screen and (min-width: 768px){
+      width: 354px;
+      padding: 20px 24px 56px ;
+      
+    }
+    @media screen and (min-width: 1200px){
+      width: 370px;
+      padding: 20px 24px;
+      
+    }
   }
   
   .portfolio-description__title{
     margin-bottom: 4px;
-  
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
