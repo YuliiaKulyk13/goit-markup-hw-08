@@ -339,30 +339,6 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.logo {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-@media screen and (min-width: 1200px) {
-  .logo {
-    margin-right: 94px;
-  }
-}
-
-.logo__header--dark {
-  color: black;
-}
-
-.logo__footer--light {
-  color: #ffffff;
-}
-
 .page-nav {
   display: flex;
   align-items: center;
@@ -371,6 +347,7 @@ img {
 .page-nav__list {
   display: flex;
   flex-direction: row;
+  display: none;
 }
 
 .page-nav__link {
@@ -427,11 +404,139 @@ img {
   background-color: var(--accent-color);
 }
 
+.menu-open-btn {
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+.menu-close-btn:hover, .menu-close-btn:focus {
+  fill: var(--accent-color);
+}
+
+is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu-top {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.mob-menu__link:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.mob-menu__item:hover, .mob-menu__item:focus {
+  color: #2196f3;
+}
+
+.menu-contacts {
+  margin-bottom: 64px;
+}
+
+.menu-connect__tel {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.menu-connect__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-soc {
+  display: flex;
+  gap: 10px;
+}
+
+.mob-soc__item {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.soc-line {
+  margin-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+.logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 94px;
+  }
+}
+
+.logo__header--dark {
+  color: black;
+}
+
+.logo__footer--light {
+  color: #ffffff;
+}
+
 .connect {
   display: flex;
   margin-left: auto;
   align-items: center;
   gap: 30px;
+  display: none;
 }
 .connect:nth-child(2n) {
   margin-right: 0;
@@ -586,7 +691,12 @@ img {
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .features-list {
@@ -596,8 +706,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .features-list {
-    align-items: center;
-    justify-content: center;
+    flex-wrap: nowrap;
   }
 }
 
@@ -615,14 +724,30 @@ img {
   }
 }
 
+.features-list__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-icon {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
 .features-list__title {
-  margin-bottom: 10px;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  font-style: 14px;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--second-text-color);
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
   .features-list__title {
@@ -631,78 +756,11 @@ img {
 }
 
 .features-list__text {
-  width: 450px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-weight: 400;
+  font-style: 14px;
+  line-height: 1.174;
   letter-spacing: 0.03em;
   color: #757575;
-}
-@media screen and (min-width: 480px) {
-  .features-list__text {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .features-list__text {
-    width: 354px;
-    align-content: flex-start;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features-list__text {
-    width: 270px;
-    justify-content: flex-start;
-  }
-}
-
-.features-list__link:nth-child(4) {
-  margin-right: 0;
-}
-
-.features-list__link::before {
-  content: "";
-  display: inline-block;
-  width: 450px;
-  height: 120px;
-  border-radius: 4px;
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-@media screen and (min-width: 480px) {
-  .features-list__link::before {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .features-list__link::before {
-    width: 350px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features-list__link::before {
-    width: 270px;
-  }
-}
-
-.icon-sputnik::before {
-  background-image: url(../images4/sputnik.svg);
-  margin-bottom: 30px;
-}
-
-.icon-clock::before {
-  background-image: url(../images4/clock.svg);
-  margin-bottom: 30px;
-}
-
-.icon-comp::before {
-  background-image: url(../images4/comp.svg);
-  margin-bottom: 30px;
-}
-
-.icon-astronaut::before {
-  background-image: url(../images4/astronaut.svg);
-  margin-bottom: 30px;
 }
 
 .images {
@@ -774,8 +832,8 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
-  line-height: 33px;
   text-align: center;
+  line-height: 33px;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
@@ -1272,12 +1330,12 @@ input {
 }
 @media screen and (min-width: 768px) {
   .portfolio-card-list__link {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-card-list__link {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -1318,13 +1376,14 @@ input {
 }
 
 .portfolio-description {
+  flex-grow: 1;
   padding: 20px 24px;
-  width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .portfolio-description {
     width: 354px;
-    padding: 20px 24px 56px;
+    padding: 20px 24px;
   }
 }
 @media screen and (min-width: 1200px) {
