@@ -9,8 +9,9 @@
     }
   
   .modal{
-    width: 528px;
-    min-height: 581px;
+  
+    width: 100%;
+    height: 100%;
     background-color: #FFFFFF;
     position: absolute;
     top: 50%;
@@ -20,6 +21,10 @@
     border-radius: 4px;
   
     transition: transform 500ms linear;
+    @media screen and (min-width:768px){
+      width: 521px;
+      min-height: 581px
+    }
   }
   
   .backdrop.is-hidden .modal {
@@ -35,6 +40,7 @@
   .modal__btn {
     width: 30px;
     height: 30px;
+    
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
   
@@ -95,7 +101,8 @@
   .form-field__input {
     margin: 0;
     padding:6px 10px ;
-    width: 448px;
+    
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -105,6 +112,10 @@
     &:focus {
       border-color: var(--accent-color);
       cursor: pointer;
+    }
+    
+    @media screen and (min-width: 1200px){
+      width: 448px;
     }
   }
   
@@ -152,8 +163,9 @@
 
     .modal-comment{
     padding: 12px;
+
     resize: none;
-    width: 448px;
+    width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -173,6 +185,10 @@
     &:focus{
       border-color: var(--accent-color);
       cursor: pointer;
+    }
+   
+    @media screen and (min-width: 1200px){
+      width: 448px;
     }
     }
   

@@ -21,7 +21,6 @@
     
     transition: var(--transition);
 
-  
     width: calc((100% - 30px) / 1);
     @media screen and (min-width: 768px) {
       width: calc((100% - 30px) / 2);
@@ -77,15 +76,9 @@
     width: 100%;
     
     @media screen and (min-width: 768px){
-      width: 354px;
       padding: 20px 24px;
-      
     }
-    @media screen and (min-width: 1200px){
-      width: 370px;
-      padding: 20px 24px;
-      
-    }
+  
   }
   
   .portfolio-description__title{
