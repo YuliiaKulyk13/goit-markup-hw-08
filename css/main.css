@@ -113,6 +113,12 @@ img {
   border-radius: 4px;
   transition: transform 500ms linear;
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 521px;
@@ -387,6 +393,7 @@ img {
   height: 100vh;
   z-index: 1;
   padding: 48px 40px;
+  transition: transform 500ms linear;
 }
 
 is-hidden {
@@ -556,11 +563,6 @@ is-hidden {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 94px;
@@ -569,6 +571,11 @@ is-hidden {
 
 .logo__header--dark {
   color: black;
+}
+@media screen and (min-width: 768px) {
+  .logo__header--dark {
+    margin-right: 88px;
+  }
 }
 
 .logo__footer--light {
@@ -850,7 +857,7 @@ is-hidden {
 .features-list__text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.174;
+  line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
 }
