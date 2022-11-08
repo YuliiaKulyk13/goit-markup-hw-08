@@ -1,24 +1,58 @@
+.mob-menu__container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
+  // padding: 48px 40px;
+}
+
 .menu-open-btn{
     display: block;
      margin-left: auto;
      background-color: transparent;
      border: none;
+     cursor: pointer;
+    transform: var(--transition);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+  }
      @media screen and (min-width: 768px){
        display: none;
      }
  }
 
   .menu-close-btn {
+    // padding-top: 21px;
+    // padding-right: 25px;
     display: block;
     margin-left: auto;
     background-color: transparent;
     border: none;
     cursor: pointer;
     transform: var(--transition);
+
     &:hover,
     &:focus {
       fill: var(--accent-color);
   }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:#ffffff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding: 48px 40px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+
 }
 
 is-hidden{
@@ -27,19 +61,9 @@ is-hidden{
   visibility: hidden;
 }
 
-.mob-menu {
-  position: fixed;
-  top: 0;
-  background-color:#ffffff;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 
 .mob-menu__list{
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .mob-menu__link{

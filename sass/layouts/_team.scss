@@ -1,9 +1,12 @@
 .team {
-    // padding-top: 94px;
-    // padding-bottom: 94px;
+    
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #f5f4fa;
+    @media screen and (min-width: 1200px){
+     padding-top: 94px;
+     padding-bottom: 94px;
+    }
   }
   
   .team__title {
@@ -12,7 +15,7 @@
     font-weight: 700;
     font-size: 28px;
     text-align: center;
-    line-height: 33px;
+    line-height: 1.26;
     letter-spacing: 0.03em;
     
     color: var(--second-text-color);

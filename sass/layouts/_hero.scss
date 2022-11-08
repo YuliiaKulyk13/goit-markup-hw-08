@@ -34,9 +34,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 118px 60px;
+    padding: 118px;
   @media screen and (min-width: 768px){
-    padding: 108px 204px;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
   @media screen and (min-width: 1200px){
     padding: 200px 452px;
@@ -56,6 +57,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-text-color);
+
+    @media screen and (min-width: 768px){
+      max-width: 360px;
+    }
 
     @media screen and (min-width: 1200px){
     min-width: 696px;

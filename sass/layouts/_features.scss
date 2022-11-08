@@ -47,7 +47,7 @@ width: 100%;
 
 .features-list__title {
     font-weight: 700;
-    font-style: 14px;
+    font-size: 14px;
     line-height: 1.143;
     letter-spacing:0.03em;
     text-transform: uppercase;
@@ -55,13 +55,20 @@ width: 100%;
     @media screen and (max-width: 767px){
         text-align: center;
     }
+
+    @media screen and (min-width: 768px){
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
 }
 
 .features-list__text {
 font-weight: 400;
-font-style: 14px;
+font-size: 14px;
 line-height: 1.174;
 letter-spacing: 0.03em;
-
 color: #757575;
 }

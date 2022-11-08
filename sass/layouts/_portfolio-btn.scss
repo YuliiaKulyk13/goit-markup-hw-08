@@ -6,7 +6,19 @@
    @media screen and (min-width: 768px){
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
    }
+   @media screen and (min-width: 1200px){
+    margin-bottom: 50px;
+    gap: 8px;
+    // .portfolio-list__item{
+    //   margin-right: 4px;
+  
+    //   &:nth-child(5n) {
+    //     margin-right: 0;
+    //   }
+    // }
+  }
   }
   
 .portfolio-list__button {
@@ -35,12 +47,5 @@
     }
   }
   
-  .portfolio-list__item{
-    margin-right: 8px;
-
-    &:nth-child(5n) {
-      margin-right: 0;
-    }
-  }
   
   
