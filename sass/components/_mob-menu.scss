@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
   justify-content: space-between;
   overflow: auto;
   // padding: 48px 40px;
@@ -26,8 +25,7 @@
  }
 
   .menu-close-btn {
-    // padding-top: 21px;
-    // padding-right: 25px;
+  
     display: block;
     margin-left: auto;
     background-color: transparent;
@@ -51,9 +49,6 @@
   z-index: 1;
   padding: 48px 40px;
   transition: transform 500ms linear;
-  // padding-top: 10px;
-  // padding-bottom: 10px;
-
 }
 
 is-hidden{
